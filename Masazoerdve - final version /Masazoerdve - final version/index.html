@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masazoerdve</title>
+
+  <!-- AOS JS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- for popup to work all three needed -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+  <!-- Topbar Start -->
+<div class="container-fluid topbar px-5 d-none d-lg-block">
+  <div class="container">
+    <div class="row gx-0 align-items-center" style="height: 45px;">
+        <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+            <div class="d-flex flex-wrap">
+                <a href="#" class="text-light no-underline me-4"><i class="fas fa-map-marker-alt  me-2"></i>Find A Location</a>
+                <a href="#" class="text-light no-underline me-4"><i class="fas fa-phone-alt  me-2"></i>+01234567890</a>
+                <a href="#" class="text-light no-underline me-0"><i class="fas fa-envelope  me-2"></i>Example@gmail.com</a>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-flex align-items-center justify-content-end">
+                <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3 btn-sm"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill btn-sm"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Topbar End -->
+
+
+  <!-- Navbar & Hero Start -->
+  <div class="container position-relative p-0">
+
+    <!--nav-->
+    <section id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light px-3 px-0 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+          <h1 class="text-success m-0"><i class="fas fa-star-of-life me-3"></i>Terapia</h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#massages" class="nav-item nav-link">Services</a>
+            <a href="#appointment" class="nav-item nav-link">Contact Us</a>
+          </div>
+          <a href="#appointment" class="btn btn-book-appointment">Book Appointment</a>
+        </div>
+      </nav>
+    </section>
+    <!--nav-->
+
+    
+
+
+
+    <!--hero-->
+    <section id="hero">
+      <div class="container">
+        <div class="container position-relative">
+          <div class="hero-image col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left"
+            style="background-image: url(img/portraitstick.png); background-size: contain;"></div>
+
+          <div class="row"> 
+            <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+              <h1 class="display-1 fw-bold mt-5">Profesionali masažo terapija jūsų sveikatai ir gerovei</h1>
+              <p class="lead">Atsipalaiduokite, sumažinkite įtampą ir atkurkite savo kūno energiją su meridianiniu,
+                klasikiniu arba pėdų masažu Raseinių mieste.</p>
+              <!--modal button, change btn-primary for something in our css to personalize-->
+              <button type="button" class="btn btn-contact-me btn-lg" data-toggle="modal" 
+                data-target="#bookAppointmentModal">Contact me</button>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- closing div for above nav -->
+    </section>
+    <!--hero-->
+
+    
+
+
+    <!--types of massages-->
+    <br>
+    <section id="massages">
+      <div class="py-vh-5 w-100 overflow-hidden" id="services">
+        <div class="container">
+         <!-- Section Heading -->
+<div class="row d-flex justify-content-end" style="padding-top: 7rem;">
+  <div class="col-lg-10 offset-lg-2 d-flex justify-content-end">
+    <h3 class="display-6" style="max-width: 800px; margin-left: auto;">
+      Masažas – tai ne tik atsipalaidavimas, bet ir veiksmingas būdas pagerinti fizinę bei
+      emocinę savijautą, pritaikytas jūsų unikaliems poreikiams.
+    </h3>
+  </div>
+</div>
+
+
+          <!-- Massage Tab Section -->
+          <div class="container my-5">
+            <nav>
+              <!-- Tab Buttons -->
+              <div class="nav nav-tabs justify-content-left" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-massage1-tab" data-bs-toggle="tab"
+                  data-bs-target="#nav-massage1" type="button" aria-controls="nav-massage1" aria-selected="true"
+                  role="tab">Meridianinis masažas</button>
+                <button class="nav-link" id="nav-massage2-tab" data-bs-toggle="tab" data-bs-target="#nav-massage2"
+                  type="button" aria-controls="nav-massage2" aria-selected="false" role="tab">Klasikinis masažas</button>
+                <button class="nav-link" id="nav-massage3-tab" data-bs-toggle="tab" data-bs-target="#nav-massage3"
+                  type="button" aria-controls="nav-massage3" aria-selected="false" role="tab">Pėdų masažas</button>
+              </div>
+            </nav>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-massage1" role="tabpanel"
+                aria-labelledby="nav-massage1-tab">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6">
+                    <span class="h5 fw-lighter">01.</span>
+                    <h4 class="py-4 border-top border-dark">Meridijaninis kūno masažas Raseiniuose: energijos balanso atkūrimas</h4>
+                    <p>Meridijaninis masažas Raseiniuose – tai tradicine kinų medicina paremtas metodas, skirtas atkurti
+                      gyvybinės energijos tėkmę jūsų kūne. Šis masažas yra puikus sprendimas norint sumažinti įtampą,
+                      pagerinti
+                      kraujotaką ir harmonizuoti energijos balansą. Tai ypač naudinga, jei ieškote holistinio būdo
+                      pagerinti
+                      savo fizinę ir emocinę sveikatą.</p>
+                    <p>Nesvarbu, ar esate sportininkas, aktyvaus gyvenimo būdo mėgėjas, ar tiesiog norite sumažinti
+                      sąstingį
+                      kūne, Meridijaninis masažas padeda atpalaiduoti raumenis ir sustiprinti organizmo funkcijas.
+                      Išbandykite
+                      šį masažą Raseiniuose ir pajuskite harmonijos naudą.</p>
+                    <p style="font-weight: bold;">Kuo naudingas meridianinis masažas?</p>
+                    <ul>
+                      <li>Mažina nugaros ir galvos skausmus.</li>
+                      <li>Gerina kvėpavimo ir limfinės sistemos veiklą.</li>
+                      <li>Atkuria lankstumą ir energijos balansą.</li>
+                    </ul>
+                    <p>Rezervuokite meridijaninį masažą Raseiniuose ir atkurkite kūno harmoniją jau šiandien!</p>
+
+
+                  </div>
+                  <div class="col-md-6" style="padding-top: 5rem;">
+                    <img src="img/meridian2 2.png" class="d-block w-100 massages-img" alt="Massage 1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade " id="nav-massage2" role="tabpanel" aria-labelledby="nav-massage2-tab">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6">
+                    <span class="h5 fw-lighter">02.</span>
+                    <h4 class="py-4 border-top border-dark">Klasikinis kūno masažas Raseiniuose: atsipalaidavimas ir raumenų atsigavimas</h4>
+                    <p>Klasikinis kūno masažas yra patikima terapija, kuri padeda atsikratyti kasdienės įtampos ir pagerinti bendrą savijautą. Šis masažas atpalaiduoja raumenis, gerina kraujotaką ir suteikia visišką atsipalaidavimą. Tai universali masažo technika, kurią galima pritaikyti kiekvienam individualiai.</p>
+                    <p>Be fizinės naudos, klasikinis masažas taip pat padeda mažinti stresą ir kurti emocinį balansą. Nesvarbu, ar norite atsigauti po ilgos dienos, ar tiesiog pasimėgauti ramybe, klasikinis masažas yra tobulas pasirinkimas.</p>
+                    <p style="font-weight: bold;">Kuo naudingas klasikinis kūno masažas?</p>
+                    <ul>
+                      <li>Pagerina kraujotaką, raumenų tonusą ir odos elastingumą.</li>
+                      <li>Mažina stresą ir padeda pasiekti emocinį balansą.</li>
+                      <li>Skatina sąnarių judrumą ir stiprina imuninę sistemą.</li>
+                    </ul>
+                    <p>Pasirinkite klasikinį kūno masažą Raseiniuose ir leiskite man pasirūpinti jūsų gerove jau šiandien!</p>
+
+                  </div>
+                  <div class="col-md-6" style="padding-top: 5rem;">
+                    <img src="img/massage.png" class="d-block w-100 massages-img" alt="Massage 2">
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade " id="nav-massage3" role="tabpanel" aria-labelledby="nav-massage3-tab">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6">
+                    <span class="h5 fw-lighter">03.</span>
+                    <h4 class="py-4 border-top border-dark">Pėdų masažas Raseiniuose: sveikata prasideda nuo pėdų</h4>
+                    <p>Pėdų masažas Raseiniuose – tai refleksoterapijos principu pagrįsta terapija, kuri orientuota į svarbiausių pėdų taškų stimuliavimą. Šis masažas skatina vidaus organų funkcijų gerinimą, mažina stresą ir pagerina bendrą organizmo savijautą. Puikiai tinka tiems, kurie ieško greito ir veiksmingo atsipalaidavimo po ilgos dienos.</p>
+                    <p>Tai ne tik maloni procedūra, bet ir būdas pagerinti kraujotaką, limfinės sistemos darbą ir imuninės sistemos funkcijas. Atraskite, kaip pėdų masažas Raseiniuose gali padėti jums jaustis lengviau ir gyvybingiau.</p>
+                    <p style="font-weight: bold;">Kuo naudingas pėdų masažas?</p>
+                    <ul>
+                      <li>Atpalaiduoja kūną, mažina nuovargį.</li>
+                      <li>Skatina kraujotaką ir limfinės sistemos veiklą.</li>
+                      <li>Stiprina imunitetą ir pagerina miego kokybę.</li>
+                    </ul>
+                    <p>Rezervuokite pėdų masažo laiką Raseiniuose ir pajuskite, kaip gerėja jūsų kūno savijauta!</p>
+
+                  </div>
+                  <div class="col-md-6" style="padding-top: 5rem;">
+                    <img src="img/foot 2.png" class="d-block w-100 massages-img" alt="Massage 3">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </section>
+    <!--types of massages-->
+
+
+
+
+
+    
+    <!--about me-->
+    <section id="about">
+      <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus" style="padding: 3rem; background-color: rgb(243, 243, 243);">
+        <div class="container">
+          <div class="row d-flex justify-content-between align-items-center">
+            <!-- Image Section -->
+            <div class="col-lg-5">
+              <div class="row gx-4 d-flex">
+                <div class="col-md-12">
+                  <div class="shadow ratio ratio-16x9  bg-cover bp-center align-self-end" data-aos="fade-right"
+                    style="background-image: url(img/long\ 3.png);--bs-aspect-ratio: 50%; background-size: contain;">
+                  </div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                  <div class="shadow ratio ratio-1x1  bg-cover mt-4 bp-center float-end" data-aos="fade-up"
+                    style="background-image: url(img/portrait\ 2.png); background-size: contain;">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="col-12 shadow ratio  bg-cover mt-4 bp-center" data-aos="fade-left"
+                    style="background-image: url(img/largo2\ 3.png);--bs-aspect-ratio: 150%; background-size: contain;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Text Section -->
+             <br>
+            <div class="col-lg-6" style="padding-top: 5rem;">
+              <h2>Susipažinkime!</h2>
+              <p class="py-2 border-top border-dark" data-aos="fade-left">
+                Labas! Esu Rita, sertifikuota masažuotoja Raseinių mieste, mano tikslas – padėti Jums atrasti ramybę, atgauti energiją ir pagerinti savo savijautą. Mano darbas – daugiau nei profesija, tai galimybė pasirūpinti Jūsų kūno ir sielos harmonija. Kiekvieną masažo sesiją pritaikau individualiai, nes suprantu, kad kiekvienas žmogus ir jo poreikiai yra unikalūs.
+              </p>
+              <p data-aos="fade-left" data-aos-delay="300">
+                Specializuojuosi Meridijaniniame masaže, klasikiniame masaže ir pėdų masaže. Nesvarbu, ar norite sumažinti stresą, atsikratyti raumenų įtampos ar tiesiog pasilepinti – mano paslaugos yra skirtos padėti jums jaustis geriau tiek fiziškai, tiek emociškai.
+              </p>
+              <p data-aos="fade-left" data-aos-delay="300">
+                Kodėl verta pas mane apsilankyti?
+              </p>
+              <ul data-aos="fade-left" data-aos-delay="300">
+                <li>Profesionalumas: Teikiu aukštos kokybės masažo paslaugas, pritaikytas jūsų sveikatos ir gerovės tikslams.</li>
+                <li>Individualus požiūris: Kiekviena masažo sesija yra kruopščiai pritaikyta jūsų poreikiams.</li>
+                <li>Jauki atmosfera: Mano studija Raseiniuose – tai vieta, kur galėsite pamiršti kasdienį stresą ir visiškai atsipalaiduoti.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about me-->
+
+
+
+
+
+
+    <!--benefits-->
+    <section id="benefits">
+      <div class="container py-vh-4 w-100 overflow-hidden" style="padding-top: 5rem;">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-5">
+            <h2 class="py-5 border-top border-dark">Benefits of massages</h2>
+          </div>
+          <div class="col-md-7">
+            <div class="fs-4 my-3 fw-light pt-4  pb-3">
+              Leiskite masažui tapti neatsiejama jūsų kasdienės savijautos dalimi. Pagerinkite fizinę ir emocinę sveikatą su profesionaliomis masažo paslaugomis Raseiniuose. Rezervuokite laiką jau šiandien ir atraskite masažo naudą!
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="small py-vh-3 w-100 overflow-hidden" style="padding-top: 5rem;">
+        <div class="container">
+          <div class="row">
+            <!-- First Benefit -->
+            <div class="col-md-6 col-lg-4 border-end">
+              <div class="py-3 text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-box-seam mb-3" viewbox="0 0 16 16">
+                  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                </svg>
+                <h3 class="h5 my-2">Fizinis atsipalaidavimas</h3>
+                <p>
+                  Masažas efektyviai mažina raumenų įtampą, gerina kraujotaką ir didina sąnarių lankstumą. Reguliarios masažo terapijos pagalba galite sumažinti skausmus ir atstatyti kūno mobilumą, kas ypač svarbu po fizinio ar emocinio streso.
+                </p>
+              </div>
+            </div>
+            <!-- Second Benefit -->
+            <div class="col-md-6 col-lg-4 border-end">
+              <div class="py-3 text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-card-checklist mb-3" viewbox="0 0 16 16">
+                  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                  <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z" />
+                </svg>
+                <h3 class="h5 my-2">Psichologinė ramybė</h3>
+                <p>
+                  Masažas – tai natūralus būdas mažinti stresą, pagerinti miego kokybę ir atkurti emocinį balansą. Procedūros metu sumažėja kortizolio (streso hormono) lygis, todėl jau po pirmo seanso pajusite atsipalaidavimą ir vidinę ramybę.
+                </p>
+              </div>
+            </div>
+            <!-- Third Benefit -->
+            <div class="col-md-6 col-lg-4">
+              <div class="py-3 text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-window-sidebar mb-3" viewbox="0 0 16 16">
+                  <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                  <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z" />
+                </svg>
+                <h3 class="h5 my-2">Holistinė sveikata</h3>
+                <p>
+                  Masažas skatina bendrą organizmo funkcijų stiprinimą. Jis padeda atkurti energijos balansą, pagerina limfinės sistemos darbą ir stiprina imunitetą, kas prisideda prie ilgalaikės sveikatos ir geresnės gyvenimo kokybės.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--benefits-->
+
+
+
+
+
+
+    
+    <!-- Book Appointment Start -->
+
+
+    <section id="appointment" style="padding-top: 7rem;">
+      <div class="container-fluid appointment py-5" >
+        <div class="container pt-4">
+          <div class="row g-5 align-items-start">
+            <!-- Left Block -->
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="section-title">
+                <h4 class="sub-title mb-3" style="color: var(--c-dark);" >Masažo paslaugos ir kainos</h4>
+                <h2 class="display-5 mb-4">Rezervuokite masažo laiką ir pasirūpinkite savo savijauta!</h2>
+                <p class="mb-4 text-muted">
+                  Atraskite kokybiškas masažo paslaugas, pritaikytas Jūsų unikaliems poreikiams. Mano tikslas – padėti Jums atsipalaiduoti, sumažinti raumenų įtampą ir pagerinti bendrą savijautą. Tegul masažas tampa Jūsų sveikatos ir harmonijos kelio dalimi.
+                </p>
+                <div>
+                  <!-- Massage Services -->
+                  <div class="mb-4">
+                    <h5 class="mb-3" style="color: var(--c-dark);"style="font-weight: bold;"><i class="fa fa-check me-2" style="color: var(--c-pink);"></i>Meridijaninis kūno masažas  €30 / 60 min</h5>
+                    <p class="text-muted mb-0">
+                      Atraskite masažą, paremtą tradicine kinų medicina, kuris atkuria Jūsų kūno energijos tėkmę ir gerina bendrą sveikatos būklę.
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="mb-3" style="color: var(--c-dark);" style="font-weight: bold;"><i class="fa fa-check me-2" style="color: var(--c-pink);"></i>Klasikinis kūno masažas  €20 / 60 min</h5>
+                    <p class="text-muted mb-0">
+                      Atsipalaiduokite ir atsikratykite streso su klasikinio masažo technika, skirta raumenų įtampai sumažinti ir kūno atgaivai.
+                    </p>
+                  </div>
+                  <div class="mb-4">
+                    <h5 class="mb-3" style="color: var(--c-dark);" style="font-weight: bold;"><i class="fa fa-check me-2" style="color: var(--c-pink);"></i>Pėdų masažas  €30 / 60 min</h5>
+                    <p class="text-muted mb-0" >
+                      Stimuliuokite savo kūno natūralų gijimą per refleksoterapiją, sutelkiančią dėmesį į svarbiausius pėdų taškus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Block -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="500">
+              <div class="appointment-form p-5 shadow" style="background-color: var(--c-light); box-shadow: 0px 4px 10px var(--c-pink);">
+                <h3 class="fs-4 text-uppercase mb-4" style="color: var(--c-dark);">Susisiekime jau dabar!</h3>
+                <h1 class="display-5 mb-4" style="color: var(--c-dark);">Užsisakykite masažo laiką lengvai ir greitai!</h1>
+                <form>
+                  <div class="row gy-3 gx-4">
+                    <div class="col-xl-6">
+                      <input type="text" class="form-control py-3 bg-transparent" placeholder="Vardas Pavardė" style="border-color: var(--c-dark);">
+                    </div>
+                    <div class="col-xl-6">
+                      <input type="email" class="form-control py-3 bg-transparent" placeholder="Elektroninis paštas" style="border-color: var(--c-dark);">
+                    </div>
+                    <div class="col-xl-6">
+                      <input type="text" class="form-control py-3 bg-transparent" placeholder="Telefono nr." style="border-color: var(--c-dark);">
+                    </div>
+                    <div class="col-xl-6">
+                      <select class="form-select py-3 bg-transparent" style="border-color: var(--c-dark);">
+                        <option selected>Pasirinkite masažą</option>
+                        <option value="1">Meridianinis masažas</option>
+                        <option value="2">Klasikinis masažas</option>
+                        <option value="2">Pėdų masažas</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <textarea class="form-control bg-transparent" style="border-color: var(--c-dark);" rows="5" placeholder="Parašykite komentarą"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn text-white w-100 py-3 px-5">GAUTI MASAŽĄ</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Book Appointment End -->
+
+
+
+    <!-- Instagram -->
+<section id="instagram">
+  <div class="instagram-wrapper">
+    <h2 class="instagram-heading">Check Us on Instagram!</h2> <!-- Centered Heading -->
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <div class="col-lg-3 col-md-6">
+          <div class="lc-block">
+            <a href="https://www.instagram.com/p/your_post_link_1" target="_blank">
+              <img class="img-fluid" loading="lazy" alt="Photo by Ishan @seefromthesky"
+                src="img/insta3.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="lc-block">
+            <a href="https://www.instagram.com/p/your_post_link_2" target="_blank">
+              <img class="img-fluid" loading="lazy" alt="Photo by Mathyas Kurmann"
+              src="img/insta4.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="lc-block">
+            <a href="https://www.instagram.com/p/your_post_link_3" target="_blank">
+              <img class="img-fluid" loading="lazy" alt="Photo by Reinis Birznieks"
+              src="img/insta2.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="lc-block">
+            <a href="https://www.instagram.com/p/your_post_link_4" target="_blank">
+              <img class="img-fluid" loading="lazy" alt="Photo by Ishan @seefromthesky"
+              src="img/insta1.png">
+            </a>
+          </div>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container-fluid -->
+  </div><!-- /instagram-wrapper -->
+</section>
+<!-- Instagram End -->
+
+
+
+
+    <!-- Footer Start -->
+<section id="footer">
+  <div class="container-fluid footer py-5" data-wow-delay="0.2s">
+    <div class="container py-5">
+      <div class="row g-5 justify-content-center text-center">
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-black mb-4"><i class="fas fa-star-of-life me-3"></i>Terapia</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem impedit eos autem dolores
+              laudantium quia, qui similique
+            </p>
+            
+            <!-- Centered Social Media Section -->
+            <div class="social-icons d-flex justify-content-center align-items-center mt-4">
+              <!-- Share Icon -->
+              <i class="fas fa-share fa-2x me-3" style=" color: var(--c-purple);"></i>
+
+              <!-- Social Media Icons -->
+              <a class="btn-square btn text-white rounded-circle mx-1" href="#"
+                 style=" background-color: var(--c-purple); display: flex; align-items: center; justify-content: center; width: 30px; height: 30px;">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a class="btn-square btn text-white rounded-circle mx-1" href="#"
+                 style=" background-color: var(--c-purple); display: flex; align-items: center; justify-content: center; width: 30px; height: 30px;">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Other sections remain unchanged -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="mb-4 text-black">Quick Links</h4>
+            <a href=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+            <a href=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+            <a href=""><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="mb-4 text-black">Terapia Services</h4>
+            <a href=""><i class="fas fa-angle-right me-2"></i> All Services</a>
+            <a href=""><i class="fas fa-angle-right me-2"></i> Physiotherapy</a>
+            <a href=""><i class="fas fa-angle-right me-2"></i> Diagnostics</a>
+            <a href=""><i class="fas fa-angle-right me-2"></i> Manual Therapy</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="mb-4 text-black">Contact Info</h4>
+            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Modal para reservar una cita -->
+    <div class="modal fade" id="bookAppointmentModal" tabindex="-1" role="dialog"
+      aria-labelledby="bookAppointmentModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookAppointmentModalLabel">Book Your Massage Appointment</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="massageType"><b>Choose Your Massage</b></label>
+                <select class="form-control" id="massageType" required>
+                  <option value="relaxation">Relaxation Massage</option>
+                  <option value="deepTissue">Deep Tissue Massage</option>
+                  <option value="sportsMassage">Sports Massage</option>
+                  <option value="aromatherapy">Aromatherapy Massage</option>
+                </select>
+                <p>Select the type of massage you'd like to book. Each type has its own benefits and duration.</p>
+              </div>
+              <div class="form-group">
+                <label for="massageDate"><b>Preferred Appointment Date</b></label>
+                <input type="date" class="form-control" id="massageDate" required>
+              </div>
+              <div class="form-group">
+                <label for="customerName"><b>Your Name</b></label>
+                <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="customerEmail"><b>Your Email</b></label>
+                <input type="email" class="form-control" id="customerEmail" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="specialRequests"><b>Special Requests</b></label>
+                <textarea class="form-control" id="specialRequests" rows="3"
+                  placeholder="Enter any special requests or preferences"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg justify-content-center">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+
+<!-- Footer End -->
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  // Initialize AOS with a custom duration
+  AOS.init({
+    duration: 1200,  // Duration of the animation in milliseconds (2 seconds)
+  });
+</script>
+
+</html>
